@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css">
+    <meta charset="UTF-8">
+    <title>정인기획</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Pretendard', sans-serif;
+            background: #f5f5f5;
+            color: #333;
+        }
+
+                        /* ===== 헤더 ===== */
+                        .hero {
+                            height: 340px;
+                            background: linear-gradient(180deg, #111, #000);
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            text-align: center;
+                            position: relative;
+                        }
+
+                        .hero::before {
+                            content: "";
+                            position: absolute;
+                            width: 100%;
+                            height: 100%;
+                            background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+                            background-size: 20px 20px;
+                        }
+
+                        .hero-inner {
+                            position: relative;
+                            color: white;
+                        }
+
+.label {
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+.hero h1 {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+                        .divider {
+                            width: 40px;
+                            height: 2px;
+                            background: #888;
+                            margin: 15px auto;
+                        }
+
+                        .subtitle {
+                            font-size: 14px;
+                            color: #bbb;
+                        }
+
+                        /* ===== 공통 ===== */
+                        .container {
+                            max-width: 900px;
+                            margin: auto;
+                            padding: 40px 20px;
+                        }
+
+                        .card {
+                            background: white;
+                            padding: 30px;
+                            margin-bottom: 20px;
+                            border-radius: 12px;
+                            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+                        }
+
+                        /* ===== 이미지 ===== */
+                        .image-section {
+                            padding: 50px 20px;
+                            text-align: center;
+                        }
+
+                .image-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 15px;
+                    margin-top: 30px;
+                }
+
+                .image-grid img {
+                    width: 100%;
+                    height: 180px;
+                    object-fit: cover;
+                    border-radius: 12px;
+                }
+
+                        /* ===== 강점 ===== */
+                        .features {
+                            display: flex;
+                            gap: 10px;
+                        }
+
+                        .feature {
+                            flex: 1;
+                            text-align: center;
+                            padding: 20px;
+                            background: #fafafa;
+                            border-radius: 10px;
+                        }
+
+                        /* ===== 문의 ===== */
+       .contact {
+    text-align: center;
+    background: #fff8d6;
+    padding: 50px 20px;
+    border-radius: 16px;
+}
+.contact-buttons {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
+/* 버튼 공통 */
+.contact-btn {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: 260px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    background: #fff;
+    text-decoration: none;
+    color: #222;
+    font-weight: 500;
+    justify-content: center;
+}
+
+/* 카카오만 노란색 */
+.contact-btn.kakao {
+    background: #fee500;
+}
+
+/* 아이콘 */
+.contact-icon {
+    width: 20px;
+    height: 20px;
+}
+
+                        /* ===== 푸터 ===== */
+                        footer {
+                            text-align: center;
+                            padding: 30px;
+                            color: #777;
+                            font-size: 14px;
+                        }
+                        .two-column {
+                    display: flex;
+                    gap: 30px;
+                }
+
+                .two-column p {
+                    flex: 1;
+                }
+h2 {
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+        p {
+    line-height: 1.8;
+    color: #555;
+}
+/* 위치 */
+.location {
+    margin-top: 25px;
+}
+
+.location-title {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 8px;
+}
+
+
+
+.address {
+    font-size: 14px;
+    color: #666;
+}
+        .list {
+    list-style: none;
+    padding: 0;
+}
+
+.list li {
+    position: relative;
+    padding-left: 14px;
+    margin-bottom: 10px;
+}
+
+.list li::before {
+    content: "-";
+    position: absolute;
+    left: 0;
+    color: #999;
+}
+    </style>
+</head>
+
+<body>
+
+<!-- ===== 헤더 ===== -->
+<header class="hero">
+    <div class="hero-inner">
+        <p class="label">JEONGIN SAMPLE STUDIO</p>
+        <h1>정인기획</h1>
+        <div class="divider"></div>
+        <p class="subtitle">
+            정확한 패턴과 섬세한 봉제로 완성되는 샘플 제작
+        </p>
+    </div>
+</header>
+
+<div class="container">
+
+    <!-- 회사 소개 -->
+    <div class="card">
+        <h2>회사 소개</h2>
+        <p>
+            20년 이상의 경력을 바탕으로 다양한 의류 샘플 제작을 진행합니다.<br><br>
+            소량 작업, 빠른 제작, 수정 대응까지 책임지고 진행합니다.
+        </p>
+    </div>
+    <!-- 작업 이력 -->
+    <div class="card">
+        <h2>작업 이력</h2>
+
+        <div class="two-column">
+            <ul class="list">
+                <li>다양한 브랜드 의류 샘플 제작 경험</li>
+                <li>여성복 / 남성복 / 캐주얼 샘플 진행</li>
+                <li>패턴 기반 샘플 제작 및 수정 대응</li>
+            </ul>
+            <ul class="list">
+                <li>20년 이상의 경력을 바탕으로 안정적인 작업 진행</li>
+                <li>소량 제작 및 빠른 샘플 대응 가능</li>
+                <li>지속적인 거래 업체 다수 보유</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 🔥 작업 이미지 -->
+    <section class="image-section">
+        <h2>작업 샘플</h2>
+        <div class="image-grid">
+            <img src="images/sewing-work1.jpg">
+            <img src="images/sewing-work2.jpg">
+            <img src="images/sewing-work2.jpg">
+            <img src="images/sewing-work2.jpg">
+        </div>
+    </section>
+
+    <!-- 선택 이유 -->
+    <div class="card">
+        <h2>이런 점이 다릅니다</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>오랜 작업 경험</h3>
+                <p>20년 이상 다양한 의류 샘플 제작 경험</p>
+            </div>
+            <div class="feature">
+                <h3>유연한 대응</h3>
+                <p>소량 및 긴급 작업까지 빠르게 대응</p>
+            </div>
+            <div class="feature">
+                <h3>안정적인 완성도</h3>
+                <p>꼼꼼한 봉제와 디테일 중심 작업</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 문의 -->
+    <div class="contact">
+        <h2>문의하기</h2>
+        <p>편한 방법으로 문의 주세요</p>
+
+        <div class="contact-buttons">
+
+            <!-- 전화 -->
+            <a href="tel:01067035227" class="contact-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" class="contact-icon">
+                <span>010-6703-5227</span>
+            </a>
+
+            <!-- 카카오 -->
+            <a href="https://open.kakao.com/xxxx" target="_blank" class="contact-btn kakao">
+                <img src="images/kakaotalk_sharing_btn_small.png" class="contact-icon">
+                <span>카카오로 문의하기</span>
+            </a>
+
+        </div>
+
+        <!-- 위치 -->
+        <div class="location">
+            <p class="address">서울특별시 중랑구 ○○로 123</p>
+        </div>
+    </div>
+
+</div>
+
+<!-- 푸터 -->
+<footer>
+    서울특별시 중랑구 ○○로 123<br>
+    © 정인기획
+</footer>
+
+</body>
+</html>
